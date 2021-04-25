@@ -5,8 +5,8 @@ public class Main {
 	public static void main(String[] args) {
 		
 		System.out.println("---------KURSLAR-----------");
-		Course course1 = new Course(1," JAVA ","Yazilim Geliþtrici Kampi(JAVA + REACT) " , "-> ENGIN DEMIROG");
-		Course course2 = new Course(2," C# ","Yazilim Geliþtirici Kampý (C# + ANGULAR) ", "->  ENGIN DEMIROG");
+		Course course1 = new Course(1," JAVA ","Yazilim Gelistrici Kampi(JAVA + REACT) " , "-> ENGIN DEMIROG");
+		Course course2 = new Course(2," C# ","Yazilim Gelistirici Kampi (C# + ANGULAR) ", "->  ENGIN DEMIROG");
 		
 		Course[] courses = {course1,course2};	
 		for(Course course : courses) {
