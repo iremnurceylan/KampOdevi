@@ -70,6 +70,7 @@ public class Main {
 		saleManager.sale(game4, gamer2, campaign1);
 		System.out.println();
 		saleManager.sale(game2, gamer2);
+		
 	}
 
 }
