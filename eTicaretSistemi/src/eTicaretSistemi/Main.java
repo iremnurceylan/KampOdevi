@@ -31,7 +31,7 @@ public class Main {
     System.out.println();
     userManager.register(user5);
     System.out.println();
-    //userDao.update(user1);
+    userDao.update(user1);
   
     
 	}
