@@ -12,14 +12,12 @@ public class GameManager implements GameService  {
 
 	@Override
 	public void delete(Game game) {
-		System.out.println(game.getGameId() + " ID'sine sahip" + " " + game.getUnitPrice() + " TL Fiyati olan "  + game.getGameName() + " isimli oyun sistemden basariyla silindi");
-		
+		System.out.println(game.getGameId() + " ID'sine sahip" + " " + game.getUnitPrice() + " TL Fiyati olan "  + game.getGameName() + " isimli oyun sistemden basariyla silindi");	
 	}
 
 	@Override
 	public void update(Game game) {
-		System.out.println(game.getGameId() + " ID'sine sahip" + " " + game.getUnitPrice() + " TL Fiyati olan "  + game.getGameName() + " isimli oyunun bilgileri basariyla güncellendi");
-		
+		System.out.println(game.getGameId() + " ID'sine sahip" + " " + game.getUnitPrice() + " TL Fiyati olan "  + game.getGameName() + " isimli oyunun bilgileri basariyla güncellendi");	
 	}
 
 	@Override
@@ -28,11 +26,8 @@ public class GameManager implements GameService  {
 		for(Game games : game) {
 			i++;
 			System.out.println(" ");
-			System.out.println(i + "-" + " Oyun Ismi: " + games.getGameName() + " --" + " Oyunun Fiyati : " + games.getUnitPrice());
-			 
+			System.out.println(i + "-" + " Oyun Ismi: " + games.getGameName() + " --" + " Oyunun Fiyati : " + games.getUnitPrice());	 
 		}
 	}
-
-	
 
 }
