@@ -1,4 +1,5 @@
 
+import Adapter.MernisServiceAdapter;
 import Concrete.CampaignManager;
 import Concrete.GameManager;
 import Concrete.GamerCheckManager;
@@ -31,12 +32,15 @@ public class Main {
 		System.out.println();
 		System.out.println("-------Oyuncu Islemleri-------------------");
 		
-		Gamer gamer1 = new Gamer (1,"Irem","Ceylan",34806512985L,2000,"irem@irem.com");
-		Gamer gamer2 = new Gamer (2,"Nuran","Korkmaz",56831904560L,1999,"nk@nk.com");
+		Gamer gamer1 = new Gamer (1,"Ýrem ","Ceylan",21359807654L,2000,"irem@irem.com");
+		Gamer gamer2 = new Gamer (2,"Engin","Demiroð",28861499108L,1985,"engin@engin.com");
+		
 	
-		GamerManager gamerManager = new GamerManager(new GamerCheckManager());
+		GamerManager gamerManager = new GamerManager(new MernisServiceAdapter());
+		gamerManager.add(gamer2);
 		gamerManager.add(gamer1);
-		gamerManager.delete(gamer2);
+		gamerManager.delete(gamer1);
+	
 		
 		System.out.println();
 		System.out.println("-------- Kampanya Islemleri-----------");
@@ -65,11 +69,9 @@ public class Main {
 		System.out.println("***** SATIS IÞLEMLERÝ****");
 		System.out.println();
 		SaleManager saleManager = new SaleManager();
-		saleManager.sale(game2, gamer1, campaign2);
+		saleManager.sale(game2, gamer2, campaign1);
 		System.out.println();
-		saleManager.sale(game4, gamer2, campaign1);
-		System.out.println();
-		saleManager.sale(game2, gamer2);
+		saleManager.sale(game1, gamer2);
 		
 	}
 
